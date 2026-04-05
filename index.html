@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramadhan Homestay | Homestay Bukittinggi Nyaman & Terjangkau</title>
+  <meta name="description" content="Ramadhan Homestay — penginapan bukittinggi terbaik untuk keluarga. Homestay Bukittinggi yang bersih, nyaman, dan strategis dengan harga terjangkau mulai Rp150.000/malam." />
+  <meta name="keywords" content="homestay bukittinggi, penginapan bukittinggi, homestay murah bukittinggi, penginapan keluarga bukittinggi, ramadhan homestay" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Ramadhan Homestay" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ramadhan Homestay | Homestay Bukittinggi Nyaman & Terjangkau" />
+  <meta property="og:description" content="Penginapan Bukittinggi yang bersih, nyaman, dan strategis. Cocok untuk keluarga. Mulai Rp150.000/malam." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80" />
+  <meta property="og:url" content="https://ramadhanhomestay.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ramadhan Homestay | Homestay Bukittinggi" />
+  <meta name="twitter:description" content="Penginapan Bukittinggi nyaman & terjangkau. Mulai Rp150.000/malam." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80" />
+
+  <!-- Google Fonts: Cormorant Garamond (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- JSON-LD LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Ramadhan Homestay",
+    "description": "Homestay Bukittinggi yang nyaman, bersih, dan terjangkau untuk keluarga dan perjalanan Anda.",
+    "url": "https://ramadhanhomestay.com",
+    "telephone": "+6281234567890",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Minangkabau No. 12",
+      "addressLocality": "Bukittinggi",
+      "addressRegion": "Sumatera Barat",
+      "postalCode": "26115",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -0.3055,
+      "longitude": 100.3691
+    },
+    "priceRange": "Rp150.000 - Rp500.000",
+    "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "WiFi Gratis", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "AC", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Parkir", "value": true}
+    ]
+  }
+  </script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+          },
+          colors: {
+            cream: '#FAF8F5',
+            stone: {
+              50: '#FAFAF9',
+              100: '#F5F5F0',
+              200: '#E8E5DE',
+              300: '#D4CFC4',
+              400: '#B5ADA0',
+              500: '#8C8278',
+              600: '#6B6259',
+              700: '#4F4840',
+              800: '#332E28',
+              900: '#1A1714',
+            },
+            sage: {
+              100: '#EEF2EE',
+              200: '#D4E0D4',
+              300: '#AABFAA',
+              400: '#7A9E7A',
+              500: '#4F7C4F',
+              600: '#3A5E3A',
+            },
+            gold: '#C5A55A',
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.8s ease forwards',
+            'fade-in': 'fadeIn 1s ease forwards',
+            'bounce-soft': 'bounceSoft 2s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            bounceSoft: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(8px)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background-color: #FAF8F5; color: #332E28; }
+
+    .font-display { font-family: 'Cormorant Garamond', serif; }
+
+    /* Hero parallax hint */
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1920&q=85');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Card hover */
+    .room-card {
+      transition: transform 0.35s cubic-bezier(.25,.8,.25,1), box-shadow 0.35s cubic-bezier(.25,.8,.25,1);
+    }
+    .room-card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 24px 60px rgba(50,46,40,0.13);
+    }
+
+    /* Divider ornament */
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+    }
+    .ornament::before, .ornament::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 1px;
+      background: #C5A55A;
+    }
+
+    /* Sticky WA */
+    #wa-sticky {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9999;
+      animation: pulse-wa 2.5s ease-in-out infinite;
+    }
+    @keyframes pulse-wa {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+      50% { box-shadow: 0 0 0 14px rgba(37,211,102,0); }
+    }
+
+    /* Scroll indicator */
+    .scroll-dot {
+      width: 6px;
+      height: 6px;
+      background: white;
+      border-radius: 9999px;
+      animation: scrollDot 1.6s ease-in-out infinite;
+    }
+    @keyframes scrollDot {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(12px); opacity: 0; }
+    }
+
+    /* Section reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Nav */
+    #navbar {
+      transition: background 0.4s ease, box-shadow 0.4s ease;
+    }
+    #navbar.scrolled {
+      background: rgba(250,248,245,0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(50,46,40,0.07);
+    }
+
+    /* Facility icon bg */
+    .fac-icon {
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: #EEF2EE;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <!-- ═══════════ STICKY WHATSAPP BUTTON ═══════════ -->
+  <a id="wa-sticky"
+     href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20kamar%20di%20Ramadhan%20Homestay%20Bukittinggi"
+     target="_blank" rel="noopener"
+     aria-label="Pesan via WhatsApp"
+     class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-body font-medium px-4 py-3 rounded-full shadow-lg transition-colors duration-200">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.845L.057 23.882l6.204-1.627A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.002-1.368l-.359-.213-3.685.967.983-3.596-.234-.369A9.794 9.794 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+    </svg>
+    <span class="hidden sm:inline text-sm">Pesan Sekarang</span>
+  </a>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <span class="font-display text-2xl font-semibold tracking-wide text-white" id="nav-logo">Ramadhan Homestay</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-body font-medium" id="nav-links">
+        <a href="#kamar" class="text-white/80 hover:text-white transition-colors">Kamar</a>
+        <a href="#fasilitas" class="text-white/80 hover:text-white transition-colors">Fasilitas</a>
+        <a href="#keunggulan" class="text-white/80 hover:text-white transition-colors">Keunggulan</a>
+        <a href="#lokasi" class="text-white/80 hover:text-white transition-colors">Lokasi</a>
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20kamar" target="_blank"
+           class="bg-gold text-white px-5 py-2 rounded-full hover:bg-yellow-700 transition-colors">
+          Pesan Kamar
+        </a>
+      </div>
+      <!-- Mobile hamburger -->
+      <button id="menu-toggle" class="md:hidden text-white focus:outline-none" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 bg-stone-800/95 rounded-2xl px-6 py-5 flex flex-col gap-4 font-body text-white">
+      <a href="#kamar" class="hover:text-gold transition-colors">Kamar</a>
+      <a href="#fasilitas" class="hover:text-gold transition-colors">Fasilitas</a>
+      <a href="#keunggulan" class="hover:text-gold transition-colors">Keunggulan</a>
+      <a href="#lokasi" class="hover:text-gold transition-colors">Lokasi</a>
+      <a href="https://wa.me/6281234567890" target="_blank" class="bg-gold text-center py-2 rounded-full">Pesan Kamar</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO SECTION ═══════════ -->
+  <section class="hero-bg relative min-h-[95vh] flex items-center justify-center" aria-label="Hero Ramadhan Homestay">
+    <!-- Layered overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-stone-900/70 via-stone-900/55 to-stone-900/80"></div>
+    <!-- Decorative grain -->
+    <div class="absolute inset-0 opacity-[0.06]" style="background-image:url('https://grainy-gradients.vercel.app/noise.svg');"></div>
+
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <!-- Eyebrow -->
+      <div class="ornament mb-6">
+        <span class="text-gold font-body text-sm tracking-[0.2em] uppercase">Bukittinggi, Sumatera Barat</span>
+      </div>
+
+      <h1 class="font-display text-5xl sm:text-6xl md:text-7xl font-light text-white leading-[1.15] mb-6">
+        Ramadhan Homestay<br/>
+        <em class="font-light italic text-gold/90">Bukittinggi</em>
+      </h1>
+
+      <p class="font-body text-white/80 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
+        Penginapan nyaman, bersih, dan strategis di Bukittinggi untuk keluarga & perjalanan Anda. Rasakan kehangatan rumah dengan sentuhan elegan.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20kamar%20di%20Ramadhan%20Homestay%20Bukittinggi"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-body font-medium px-8 py-4 rounded-full shadow-lg transition-all duration-200 hover:shadow-green-500/30 hover:shadow-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.845L.057 23.882l6.204-1.627A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.002-1.368l-.359-.213-3.685.967.983-3.596-.234-.369A9.794 9.794 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+          </svg>
+          Pesan Sekarang via WhatsApp
+        </a>
+        <a href="#kamar"
+           class="inline-flex items-center gap-2 border border-white/40 text-white hover:bg-white/10 font-body font-medium px-8 py-4 rounded-full transition-all duration-200 backdrop-blur-sm">
+          Lihat Tipe Kamar
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
+      <span class="font-body text-white/50 text-xs tracking-widest uppercase">Scroll</span>
+      <div class="w-[1px] h-8 bg-white/20 relative overflow-hidden rounded-full">
+        <div class="scroll-dot absolute top-0 left-1/2 -translate-x-1/2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ QUICK STATS ═══════════ -->
+  <section class="bg-stone-800 py-6">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="py-4">
+        <p class="font-display text-3xl text-gold font-semibold">4+</p>
+        <p class="font-body text-white/60 text-sm mt-1">Tipe Kamar</p>
+      </div>
+      <div class="py-4">
+        <p class="font-display text-3xl text-gold font-semibold">150rb</p>
+        <p class="font-body text-white/60 text-sm mt-1">Mulai dari / malam</p>
+      </div>
+      <div class="py-4">
+        <p class="font-display text-3xl text-gold font-semibold">★ 4.9</p>
+        <p class="font-body text-white/60 text-sm mt-1">Rating Tamu</p>
+      </div>
+      <div class="py-4">
+        <p class="font-display text-3xl text-gold font-semibold">500+</p>
+        <p class="font-body text-white/60 text-sm mt-1">Tamu Puas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TIPE KAMAR ═══════════ -->
+  <section id="kamar" class="py-24 px-6 bg-cream">
+    <div class="max-w-6xl mx-auto">
+      <!-- Heading -->
+      <div class="text-center mb-16 reveal">
+        <div class="ornament mb-4">
+          <span class="text-gold font-body text-xs tracking-[0.2em] uppercase">Pilihan Kamar</span>
+        </div>
+        <h2 class="font-display text-4xl sm:text-5xl font-light text-stone-800 leading-tight">
+          Tipe Kamar <em class="italic text-sage-500">Kami</em>
+        </h2>
+        <p class="font-body text-stone-500 mt-4 max-w-xl mx-auto text-base leading-relaxed">
+          Setiap kamar di homestay Bukittinggi kami dirancang untuk kenyamanan maksimal — bersih, tenang, dan penuh kehangatan.
+        </p>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+        <!-- Card 1: Standard -->
+        <article class="room-card bg-white rounded-2xl overflow-hidden shadow-md reveal" style="transition-delay:0.05s">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80"
+                 alt="Kamar Standard Ramadhan Homestay Bukittinggi"
+                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm font-body text-xs font-medium text-stone-700 px-3 py-1 rounded-full shadow">Standard</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl font-semibold text-stone-800 mb-3">Standard Room</h3>
+            <ul class="font-body text-sm text-stone-500 space-y-1 mb-5">
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> Kasur double nyaman</li>
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> AC & kipas angin</li>
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> WiFi Gratis</li>
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> Kamar mandi dalam</li>
+            </ul>
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-body text-xs text-stone-400 uppercase tracking-wider">Harga mulai</p>
+                <p class="font-display text-2xl font-semibold text-stone-800">Rp150.000<span class="text-base font-light text-stone-400">/malam</span></p>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20Standard%20Room%20di%20Ramadhan%20Homestay%20Bukittinggi"
+                 target="_blank" rel="noopener"
+                 class="bg-sage-500 hover:bg-sage-600 text-white font-body text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
+                Pesan
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Deluxe -->
+        <article class="room-card bg-white rounded-2xl overflow-hidden shadow-md reveal" style="transition-delay:0.1s">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80"
+                 alt="Kamar Deluxe Ramadhan Homestay Bukittinggi"
+                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm font-body text-xs font-medium text-stone-700 px-3 py-1 rounded-full shadow">Deluxe</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl font-semibold text-stone-800 mb-3">Deluxe Room</h3>
+            <ul class="font-body text-sm text-stone-500 space-y-1 mb-5">
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> Kasur queen size premium</li>
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> AC + Smart TV</li>
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> WiFi Gratis</li>
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> Air panas & shower</li>
+            </ul>
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-body text-xs text-stone-400 uppercase tracking-wider">Harga mulai</p>
+                <p class="font-display text-2xl font-semibold text-stone-800">Rp250.000<span class="text-base font-light text-stone-400">/malam</span></p>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20Deluxe%20Room%20di%20Ramadhan%20Homestay%20Bukittinggi"
+                 target="_blank" rel="noopener"
+                 class="bg-sage-500 hover:bg-sage-600 text-white font-body text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
+                Pesan
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Family -->
+        <article class="room-card bg-white rounded-2xl overflow-hidden shadow-md reveal" style="transition-delay:0.15s">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
+                 alt="Kamar Family Ramadhan Homestay Bukittinggi cocok untuk keluarga"
+                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm font-body text-xs font-medium text-stone-700 px-3 py-1 rounded-full shadow">Family</span>
+            <span class="absolute top-4 right-4 bg-gold text-white font-body text-xs font-medium px-3 py-1 rounded-full shadow">Favorit</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl font-semibold text-stone-800 mb-3">Family Room</h3>
+            <ul class="font-body text-sm text-stone-500 space-y-1 mb-5">
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> 2 kasur double — cocok keluarga</li>
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> AC + Smart TV 32"</li>
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> Ruang duduk nyaman</li>
+              <li class="flex items-center gap-2"><span class="text-sage-400">✓</span> Air panas & balkon kecil</li>
+            </ul>
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-body text-xs text-stone-400 uppercase tracking-wider">Harga mulai</p>
+                <p class="font-display text-2xl font-semibold text-stone-800">Rp350.000<span class="text-base font-light text-stone-400">/malam</span></p>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20Family%20Room%20di%20Ramadhan%20Homestay%20Bukittinggi"
+                 target="_blank" rel="noopener"
+                 class="bg-sage-500 hover:bg-sage-600 text-white font-body text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
+                Pesan
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: VIP -->
+        <article class="room-card bg-stone-800 rounded-2xl overflow-hidden shadow-md reveal" style="transition-delay:0.2s">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80"
+                 alt="Kamar VIP mewah Ramadhan Homestay Bukittinggi penginapan bukittinggi premium"
+                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105 opacity-90" />
+            <span class="absolute top-4 left-4 bg-gold text-white font-body text-xs font-medium px-3 py-1 rounded-full shadow">VIP</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display text-2xl font-semibold text-white mb-3">VIP Room</h3>
+            <ul class="font-body text-sm text-stone-400 space-y-1 mb-5">
+              <li class="flex items-center gap-2"><span class="text-gold">✓</span> Kasur king size premium</li>
+              <li class="flex items-center gap-2"><span class="text-gold">✓</span> AC + Smart TV 43" + Mini bar</li>
+              <li class="flex items-center gap-2"><span class="text-gold">✓</span> Bathtub & shower rain</li>
+              <li class="flex items-center gap-2"><span class="text-gold">✓</span> View Jam Gadang eksklusif</li>
+            </ul>
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-body text-xs text-stone-500 uppercase tracking-wider">Harga mulai</p>
+                <p class="font-display text-2xl font-semibold text-gold">Rp500.000<span class="text-base font-light text-stone-500">/malam</span></p>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20VIP%20Room%20di%20Ramadhan%20Homestay%20Bukittinggi"
+                 target="_blank" rel="noopener"
+                 class="bg-gold hover:bg-yellow-600 text-white font-body text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
+                Pesan
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FASILITAS ═══════════ -->
+  <section id="fasilitas" class="py-24 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <div class="ornament mb-4">
+          <span class="text-gold font-body text-xs tracking-[0.2em] uppercase">Fasilitas</span>
+        </div>
+        <h2 class="font-display text-4xl sm:text-5xl font-light text-stone-800">
+          Semua yang Anda <em class="italic text-sage-500">Butuhkan</em>
+        </h2>
+        <p class="font-body text-stone-500 mt-4 max-w-xl mx-auto text-base">
+          Penginapan Bukittinggi kami dilengkapi fasilitas lengkap agar Anda merasa seperti di rumah sendiri.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 reveal">
+        <div class="flex flex-col items-center text-center gap-3 p-5 rounded-2xl hover:bg-sage-100 transition-colors duration-200">
+          <div class="fac-icon">📶</div>
+          <p class="font-body font-medium text-stone-700 text-sm">WiFi Gratis</p>
+          <p class="font-body text-stone-400 text-xs">Kecepatan tinggi</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-3 p-5 rounded-2xl hover:bg-sage-100 transition-colors duration-200">
+          <div class="fac-icon">❄️</div>
+          <p class="font-body font-medium text-stone-700 text-sm">AC</p>
+          <p class="font-body text-stone-400 text-xs">Semua kamar</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-3 p-5 rounded-2xl hover:bg-sage-100 transition-colors duration-200">
+          <div class="fac-icon">🅿️</div>
+          <p class="font-body font-medium text-stone-700 text-sm">Parkir Luas</p>
+          <p class="font-body text-stone-400 text-xs">Gratis & aman</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-3 p-5 rounded-2xl hover:bg-sage-100 transition-colors duration-200">
+          <div class="fac-icon">🚿</div>
+          <p class="font-body font-medium text-stone-700 text-sm">Air Panas</p>
+          <p class="font-body text-stone-400 text-xs">24 jam</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-3 p-5 rounded-2xl hover:bg-sage-100 transition-colors duration-200">
+          <div class="fac-icon">🍳</div>
+          <p class="font-body font-medium text-stone-700 text-sm">Dapur Bersama</p>
+          <p class="font-body text-stone-400 text-xs">Lengkap & bersih</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-3 p-5 rounded-2xl hover:bg-sage-100 transition-colors duration-200">
+          <div class="fac-icon">📺</div>
+          <p class="font-body font-medium text-stone-700 text-sm">Smart TV</p>
+          <p class="font-body text-stone-400 text-xs">Kamar Deluxe & atas</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-3 p-5 rounded-2xl hover:bg-sage-100 transition-colors duration-200">
+          <div class="fac-icon">🛁</div>
+          <p class="font-body font-medium text-stone-700 text-sm">Kamar Mandi</p>
+          <p class="font-body text-stone-400 text-xs">Private bathroom</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-3 p-5 rounded-2xl hover:bg-sage-100 transition-colors duration-200">
+          <div class="fac-icon">🔒</div>
+          <p class="font-body font-medium text-stone-700 text-sm">Keamanan</p>
+          <p class="font-body text-stone-400 text-xs">CCTV 24 jam</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-3 p-5 rounded-2xl hover:bg-sage-100 transition-colors duration-200">
+          <div class="fac-icon">☕</div>
+          <p class="font-body font-medium text-stone-700 text-sm">Area Santai</p>
+          <p class="font-body text-stone-400 text-xs">Ruang tamu nyaman</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-3 p-5 rounded-2xl hover:bg-sage-100 transition-colors duration-200">
+          <div class="fac-icon">🏔️</div>
+          <p class="font-body font-medium text-stone-700 text-sm">View Indah</p>
+          <p class="font-body text-stone-400 text-xs">Panorama kota</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ KEUNGGULAN ═══════════ -->
+  <section id="keunggulan" class="py-24 px-6 bg-cream relative overflow-hidden">
+    <!-- decorative bg -->
+    <div class="absolute top-0 right-0 w-80 h-80 rounded-full bg-sage-100 opacity-50 blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-gold/10 blur-3xl translate-y-1/3 -translate-x-1/3"></div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <!-- Image -->
+        <div class="relative reveal">
+          <img src="hs2.jpg"
+               alt="Interior nyaman Ramadhan Homestay penginapan bukittinggi terbaik"
+               class="w-full h-[450px] object-cover rounded-3xl shadow-2xl" />
+          <!-- floating badge -->
+          <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl px-6 py-4 hidden sm:block">
+            <p class="font-body text-xs text-stone-400 uppercase tracking-wider">Pengalaman</p>
+            <p class="font-display text-3xl font-semibold text-stone-800">4+ Tahun</p>
+            <p class="font-body text-xs text-stone-500">melayani tamu Bukittinggi</p>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="reveal">
+          <div class="ornament justify-start mb-5" style="justify-content:flex-start;">
+            <span class="text-gold font-body text-xs tracking-[0.2em] uppercase">Mengapa Kami</span>
+            <div style="width:60px;height:1px;background:#C5A55A;"></div>
+          </div>
+          <h2 class="font-display text-4xl sm:text-5xl font-light text-stone-800 leading-tight mb-8">
+            Kenapa Pilih<br/><em class="italic text-sage-500">Ramadhan Homestay?</em>
+          </h2>
+
+          <div class="space-y-6">
+            <div class="flex gap-5 items-start">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-sage-100 flex items-center justify-center text-xl">📍</div>
+              <div>
+                <h3 class="font-body font-semibold text-stone-800 mb-1">Lokasi Strategis di Bukittinggi</h3>
+                <p class="font-body text-stone-500 text-sm leading-relaxed">Hanya beberapa menit dari Jam Gadang, Pasar Atas, dan berbagai wisata populer Bukittinggi. Homestay Bukittinggi kami mudah diakses dari seluruh penjuru kota.</p>
+              </div>
+            </div>
+            <div class="flex gap-5 items-start">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-sage-100 flex items-center justify-center text-xl">💰</div>
+              <div>
+                <h3 class="font-body font-semibold text-stone-800 mb-1">Harga Terjangkau, Kualitas Bintang</h3>
+                <p class="font-body text-stone-500 text-sm leading-relaxed">Penginapan Bukittinggi berkualitas tidak harus mahal. Nikmati fasilitas lengkap dengan harga yang ramah di kantong mulai Rp150.000/malam.</p>
+              </div>
+            </div>
+            <div class="flex gap-5 items-start">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-sage-100 flex items-center justify-center text-xl">👨‍👩‍👧‍👦</div>
+              <div>
+                <h3 class="font-body font-semibold text-stone-800 mb-1">Cocok untuk Keluarga</h3>
+                <p class="font-body text-stone-500 text-sm leading-relaxed">Suasana hangat dan aman membuat seluruh anggota keluarga betah. Tersedia kamar family dengan kapasitas lebih besar dan ruang gerak lega.</p>
+              </div>
+            </div>
+            <div class="flex gap-5 items-start">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-sage-100 flex items-center justify-center text-xl">✨</div>
+              <div>
+                <h3 class="font-body font-semibold text-stone-800 mb-1">Bersih & Nyaman Terjamin</h3>
+                <p class="font-body text-stone-500 text-sm leading-relaxed">Standar kebersihan kami dijaga ketat setiap hari. Setiap sudut kamar dibersihkan dengan teliti agar tamu merasa nyaman layaknya di rumah sendiri.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TESTIMONI ═══════════ -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <div class="ornament mb-4">
+          <span class="text-gold font-body text-xs tracking-[0.2em] uppercase">Testimoni</span>
+        </div>
+        <h2 class="font-display text-4xl font-light text-stone-800">Kata Tamu <em class="italic text-sage-500">Kami</em></h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 reveal">
+        <div class="bg-cream rounded-2xl p-6 border border-stone-100">
+          <div class="flex gap-1 mb-3">★★★★★</div>
+          <p class="font-body text-stone-600 text-sm leading-relaxed mb-4">"Homestay Bukittinggi terbaik yang pernah saya inapi. Bersih, nyaman, dan pemiliknya ramah. Lokasi dekat Jam Gadang, sangat recommended!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-sage-300 flex items-center justify-center text-white font-display font-semibold">A</div>
+            <div>
+              <p class="font-body font-medium text-stone-700 text-sm">Andi Pratama</p>
+              <p class="font-body text-stone-400 text-xs">Padang</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-cream rounded-2xl p-6 border border-stone-100">
+          <div class="flex gap-1 mb-3">★★★★★</div>
+          <p class="font-body text-stone-600 text-sm leading-relaxed mb-4">"Penginapan Bukittinggi yang nyaman banget buat keluarga. Anak-anak betah, fasilitas lengkap, harga sangat bersahabat. Pasti balik lagi!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-gold/60 flex items-center justify-center text-white font-display font-semibold">S</div>
+            <div>
+              <p class="font-body font-medium text-stone-700 text-sm">Siti Rahma</p>
+              <p class="font-body text-stone-400 text-xs">Pekanbaru</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-cream rounded-2xl p-6 border border-stone-100">
+          <div class="flex gap-1 mb-3">★★★★★</div>
+          <p class="font-body text-stone-600 text-sm leading-relaxed mb-4">"Sudah 3 kali menginap di Ramadhan Homestay. Selalu bersih dan pelayanannya memuaskan. Homestay Bukittinggi pilihan utama saya!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-sage-500 flex items-center justify-center text-white font-display font-semibold">R</div>
+            <div>
+              <p class="font-body font-medium text-stone-700 text-sm">Rizky Fadillah</p>
+              <p class="font-body text-stone-400 text-xs">Medan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ LOKASI ═══════════ -->
+  <section id="lokasi" class="py-24 px-6 bg-cream">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <div class="ornament mb-4">
+          <span class="text-gold font-body text-xs tracking-[0.2em] uppercase">Lokasi</span>
+        </div>
+        <h2 class="font-display text-4xl sm:text-5xl font-light text-stone-800 mb-4">
+          Temukan Kami di <em class="italic text-sage-500">Bukittinggi</em>
+        </h2>
+        <p class="font-body text-stone-500 max-w-xl mx-auto text-base leading-relaxed">
+          Lokasi homestay Bukittinggi kami sangat strategis — dekat Jam Gadang, Pasar Atas, dan berbagai destinasi wisata populer di Bukittinggi, Sumatera Barat.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <!-- Info -->
+        <div class="space-y-5 reveal">
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
+            <h3 class="font-body font-semibold text-stone-700 mb-1 text-sm uppercase tracking-wider">📍 Alamat</h3>
+            <p class="font-body text-stone-600 text-sm leading-relaxed mt-2">Jl. Minangkabau No. 12, Bukittinggi, Sumatera Barat 26115</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
+            <h3 class="font-body font-semibold text-stone-700 mb-1 text-sm uppercase tracking-wider">📞 Kontak</h3>
+            <a href="https://wa.me/6281234567890" class="font-body text-sage-500 hover:text-sage-600 text-sm mt-2 block transition-colors">+62 812-3456-7890 (WhatsApp)</a>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
+            <h3 class="font-body font-semibold text-stone-700 mb-1 text-sm uppercase tracking-wider">🕐 Check In / Out</h3>
+            <p class="font-body text-stone-600 text-sm mt-2">Check-in: 14.00 WIB</p>
+            <p class="font-body text-stone-600 text-sm">Check-out: 12.00 WIB</p>
+          </div>
+        </div>
+        <!-- Map -->
+        <div class="md:col-span-2 reveal">
+          <div class="rounded-3xl overflow-hidden shadow-xl h-[380px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31838.08285395788!2d100.35!3d-0.305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b9dca0a11b7b%3A0x2074e700a5568a26!2sBukittinggi%2C%20West%20Sumatra!5e0!3m2!1sen!2sid!4v1680000000000!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokasi Ramadhan Homestay Bukittinggi di Google Maps"
+              aria-label="Peta lokasi homestay Bukittinggi">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CTA SECTION ═══════════ -->
+  <section class="relative py-28 px-6 overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1543489822-c49534f3271f?w=1600&q=80"
+           alt="Pemandangan indah Bukittinggi dari Ramadhan Homestay penginapan terbaik"
+           class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-stone-900/80"></div>
+    </div>
+
+    <div class="relative z-10 max-w-3xl mx-auto text-center reveal">
+      <div class="ornament mb-6">
+        <span class="text-gold font-body text-xs tracking-[0.2em] uppercase">Booking Sekarang</span>
+      </div>
+      <h2 class="font-display text-4xl sm:text-5xl font-light text-white leading-tight mb-6">
+        Cari homestay Bukittinggi yang nyaman dan terjangkau?
+        <em class="italic text-gold/90"> Ramadhan Homestay</em> pilihan terbaik Anda.
+      </h2>
+      <p class="font-body text-white/70 text-base mb-10 max-w-xl mx-auto leading-relaxed">
+        Jangan tunda rencana perjalanan Anda. Pesan kamar sekarang via WhatsApp dan dapatkan konfirmasi instan dari tim kami.
+      </p>
+      <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20kamar%20di%20Ramadhan%20Homestay%20Bukittinggi"
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-body font-semibold text-lg px-10 py-5 rounded-full shadow-2xl transition-all duration-200 hover:shadow-green-500/30 hover:scale-[1.02]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.845L.057 23.882l6.204-1.627A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.002-1.368l-.359-.213-3.685.967.983-3.596-.234-.369A9.794 9.794 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+        </svg>
+        Hubungi via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="bg-stone-900 text-white pt-16 pb-8 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 mb-12">
+        <!-- Brand -->
+        <div>
+          <p class="font-display text-3xl font-semibold text-white mb-3">Ramadhan Homestay</p>
+          <p class="font-body text-stone-400 text-sm leading-relaxed mb-5">
+            Penginapan Bukittinggi terpercaya untuk keluarga dan perjalanan Anda. Nyaman, bersih, dan terjangkau di jantung kota Bukittinggi.
+          </p>
+          <a href="https://wa.me/6281234567890" target="_blank"
+             class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-body font-medium px-5 py-2.5 rounded-full transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.845L.057 23.882l6.204-1.627A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.002-1.368l-.359-.213-3.685.967.983-3.596-.234-.369A9.794 9.794 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+            </svg>
+            Chat WhatsApp
+          </a>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="font-body font-semibold text-white mb-5 tracking-wider text-sm uppercase">Navigasi</h4>
+          <ul class="font-body text-stone-400 text-sm space-y-3">
+            <li><a href="#kamar" class="hover:text-gold transition-colors">Tipe Kamar</a></li>
+            <li><a href="#fasilitas" class="hover:text-gold transition-colors">Fasilitas</a></li>
+            <li><a href="#keunggulan" class="hover:text-gold transition-colors">Keunggulan</a></li>
+            <li><a href="#lokasi" class="hover:text-gold transition-colors">Lokasi & Peta</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-body font-semibold text-white mb-5 tracking-wider text-sm uppercase">Kontak</h4>
+          <address class="font-body text-stone-400 text-sm not-italic space-y-3">
+            <p class="flex items-start gap-2">
+              <span class="mt-0.5">📍</span>
+              <span>Jl. Minangkabau No. 12, Bukittinggi, Sumatera Barat 26115</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span>📞</span>
+              <a href="https://wa.me/6281234567890" class="hover:text-gold transition-colors">+62 812-3456-7890</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <span>✉️</span>
+              <a href="mailto:info@ramadhanhomestay.com" class="hover:text-gold transition-colors">info@ramadhanhomestay.com</a>
+            </p>
+          </address>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="border-t border-stone-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="font-body text-stone-500 text-xs">
+          © 2025 Ramadhan Homestay Bukittinggi. Semua hak dilindungi.
+        </p>
+        <p class="font-body text-stone-600 text-xs">
+          Penginapan Bukittinggi · Homestay Bukittinggi · Sumatera Barat
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════ JAVASCRIPT ═══════════ -->
+  <script>
+    // ─── Navbar scroll behavior ───
+    const navbar = document.getElementById('navbar');
+    const navLogo = document.getElementById('nav-logo');
+    const navLinks = document.getElementById('nav-links');
+
+    function handleNavScroll() {
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+        navLogo.classList.replace('text-white', 'text-stone-800');
+        if (navLinks) {
+          navLinks.querySelectorAll('a:not(.bg-gold)').forEach(a => {
+            a.classList.replace('text-white/80', 'text-stone-600');
+            a.classList.replace('hover:text-white', 'hover:text-stone-900');
+          });
+        }
+      } else {
+        navbar.classList.remove('scrolled');
+        navLogo.classList.replace('text-stone-800', 'text-white');
+        if (navLinks) {
+          navLinks.querySelectorAll('a:not(.bg-gold)').forEach(a => {
+            a.classList.replace('text-stone-600', 'text-white/80');
+            a.classList.replace('hover:text-stone-900', 'hover:text-white');
+          });
+        }
+      }
+    }
+    window.addEventListener('scroll', handleNavScroll, { passive: true });
+
+    // ─── Mobile menu ───
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // ─── Scroll reveal ───
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 40);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
